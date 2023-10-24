@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> my document </title>
+	<link rel="stylesheet" href="Assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style type="text/css">
+		.about-hero .container{
+			width: 100%;
+			height: 60vh;
+			background-image: url("Assets/img/IMG_6941.jpg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.contact-address-section{
+			max-width: 100vw;
+			padding: 15rem 5rem 3rem;
+		}
+
+		.contact-address .container{
+			max-width: 120rem;
+			width: 100%;
+			border: 2px solid black;
+			justify-content: space-between;
+			margin: auto;
+
+		}
+		.contact-address .left-content{
+			width: 100%;
+			padding: 5rem 3rem 0 0;
+			flex: 1 0 40rem;
+		}
+		.contact-address .left-content h2{
+			margin-bottom: 1rem;
+		}
+		.contact-address .left-content h3{
+			margin-bottom: 1rem;
+		}
+		.contact-address .left-content i{
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+		}
+		.contact-address .right-content{
+			width: 100%;
+			flex: 1 0 40rem;
+
+			border: 2px solid black;			
+		}
+
+		.contact-address .right-content iframe{
+			width: 100%;
+		}
+
+		@media screen and (max-width: 991px){
+			.contact-address .left-content{
+				padding: 5rem 3rem 2rem 0;
+			}
+			
+
+		}
+			
+		@media screen and (max-width: 768px){
+			.contact-address .container{
+				flex-direction: column;
+			}
+			.contact-address .left-content{
+				width: 100%;
+
+			}
+			.contact-address .right-content{
+				width: 100%;
+				padding: 0;
+			}
+			.contact-address .right-content iframe{
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 640px){
+			.contact-address-section{
+				padding: 15rem 3rem 3rem;
+			}
+		}
+
+
+		/*||CONTACT FORM SECTION*/
+		.contact-form-section{
+			max-width: 100vw;
+			margin: 10rem 0;
+			padding: 0 5rem;
+		}
+		.contact-form-section .container{
+			max-width: 120rem;
+			width: 100%;
+			margin: auto;
+		}
+		.contact-form-section .left-content{
+			width: 100%;
+			flex: 1 0 40rem;
+		}
+		.contact-form-section .left-content form input{
+			height: 4rem;
+			width: 60rem;
+			background: #fcfcfc;
+			border: none;
+			margin: 1rem 0;
+			padding-left: 1rem;
+			font-weight: 600;
+		}
+		.contact-form-section .left-content form textarea{
+			height: 15rem;
+			width: 60rem;
+			background: #fcfcfc;
+			border: none;
+			font-size: 1.7rem;
+		}
+		.contact-form-section .left-content form button{
+			height: 4rem;
+			width: 12rem;
+			background: var(--orange);
+			color: var(--grey);
+			font-size: 1.7rem;
+			border: none;
+			border-radius: 0.5rem;
+			margin-top: 1rem;
+			cursor: pointer;
+		}
+		.contact-form-section .left-content form button:hover{
+			opacity: 0.5;
+			transition: 1s;
+		}
+		.contact-form-section .right-content{
+			width: 100%;
+			flex: 0 0 0;
+		}
+
+		.contact-form-section .right-content .container{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 1rem;
+		}
+		.contact-form-section .right-content .img img{
+			border-radius: 50%;
+			margin: 2rem 0rem 0rem 0rem;
+
+
+		}
+		.contact-form-section .right-content .text{
+			width: 30rem;
+			margin: 2rem 0;
+		}
+
+		
+		@media screen and (max-width: 1280px){
+			.contact-form-section .left-content form input{
+				width: 50rem;
+			}
+
+			.contact-form-section .left-content form textarea{
+				width: 50rem;
+			}
+
+		}
+
+		@media screen and (max-width: 1024px){
+			.contact-form-section .left-content{
+				flex: 0 0 0;
+			}
+			.contact-form-section .left-content form input{
+				width: 40rem;
+			}
+
+			.contact-form-section .left-content form textarea{
+				width: 40rem;
+			}
+		}
+
+		@media screen and (max-width: 1024px){
+			.contact-form-section .left-content form input, textarea{
+				width: 60rem;
+			}
+
+		}
+
+
+
+	</style>
+</head>
+<body>
+		<!-- Header Section Starts Here -->
+		<header>
+			<div class="top-nav">
+				<div class="container">
+					<div class="top-content d-flex">
+						<p>Email us: sparkleglassess@gmail.com</p>
+						<p>
+						 +2347000055500
+						 <select name="currency">
+							<option>NGN</option>
+							<option>USD</option>
+							<option>EUR</option>
+							<option>GBP</option>
+							<option>GHS</option>
+						</select>
+						</p>
+					</div>
+					<div class="content d-flex">
+						<div class="logo">
+							<h1>SPARKLE.</h1>
+						</div>
+						<div class="search-box">
+							<input type="text" id="search-input" placeholder="search for products">
+							<div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+						</div>
+						<div class="icons">
+							<!-- <i class="fa-solid fa-user"></i> -->
+							<div class="fa-icon">
+								<i class="fa-regular fa-user"></i>
+								<span><a href="login.html">Login</a><br><a href="register.html">Register</a></span>
+							</div>
+							
+							<div class="fa-icon">								
+ 								<i class="fa-regular fa-heart"></i>
+                                <span>
+                                	<a href="#">Favourite</a> <br> 
+                                	<a href="#">Wishlist</a>
+                                </span>                                
+							</div>
+							<div class="fa-icon">
+								<i class="fa-solid fa-cart-plus"></i>
+ 								<span>
+ 									<a href="#">Add</a> <br> 
+ 									<a href="">To cart</a>
+ 								</span>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav id="navbar">
+				<div class="nav-bar">
+					<div class="responsive-icon">
+						<label id="toggler" class="fas fa-bars" onclick="myfunction()"></label>
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+					
+					<ul id="nav-list">
+						<select name="category">
+							<option>CATEGORY</option>
+							<option>SUNGLASSES</option>
+							<option>PHOTOCHROMIC GLASSESS</option>
+							<option>PRESCRIPTION GLASSES</option>
+							<option>FASHION GLASSES</option>
+						</select>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#">SHOP</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="#" class="active" >CONTACT</a></li>
+					</ul>					
+				</div>
+			</nav>
+	
+			<div class="about-hero">
+				<div class="container">
+					<div class="content">
+												
+					</div>
+				</div>
+			</div>
+		
+		</header>
+		<!-- Header Section Ends Here -->
+
+		<main>
+			<!-- Contact Address Section Starts Here -->
+			<section class="contact-address-section">
+				<div class="contact-address">
+					<div class="container d-flex">
+						<div class="left-content">
+							<p class="p-title">GET IN TOUCH</p>
+							<h2>visit one of our agency locations or contact us today</h2>
+							<h3>Head Office</h3>
+							<address><i class="fa-solid fa-location-dot"></i> 56 Cresent layout Victoria Island Lagos State, Nigeria.</address>
+							<p><i class="fa-solid fa-envelope"></i> sparkleglassess@gmail.com</p>
+							<p><i class="fa-solid fa-phone"></i> +2347000055500</p>
+							<p><i class="fa-solid fa-clock"></i> Monday to Saturday 8:00am t0 10:00pm</p>
+						</div>
+						<div class="right-content">
+							<div class="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15858.940811797276!2d3.4219443999999997!3d6.42805545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53280e7648d%3A0x4d01e5de6b847fe5!2sVictoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1693556026051!5m2!1sen!2sng" width="" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Contact Address Section Ends Here -->
+
+
+			<!-- Contact Form Section Starts Here -->
+			<section class="contact-form-section">
+				<div class="contact-form">
+					<div class="container d-flex">
+						<div class="left-content">
+							<p>LEAVE A MESSAGE</p>
+							<h3>We Love to hear from you</h3>
+							<form id="contact-form">
+								<p>
+									<label for="name"></label>
+									<input type="text" name="customer-name" id="customer-name" placeholder="Your Name" required>
+								</p>
+								<p>
+									<label for="email"></label>
+									<input type="email" name="email" id="email" placeholder="E-mail" required>
+								</p>
+								<p>
+									<label for="subject"></label>
+									<input type="text" name="subject" id="subject" placeholder="Subject">
+								</p>
+								<p>
+									<label for="message"></label>
+									<textarea name="message" id="message" placeholder="Message"></textarea>
+								</p>
+								<button>Submit</button>
+							</form>
+						</div>
+						<div class="right-content">
+							<div class="container">
+								<div class="img"><img src="Assets/img/menglass2.jpg" height="100" width="100"></div>
+								<div class="text">
+									<h3>John Doe</h3>
+									<p>Senior Marketing Manager</p>
+									<p>Phone +2347000055500</p>
+									<p>E-mail sparkleglasses@gmail.com</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="img"><img src="Assets/img2/glass10.jpeg" height="100" width="100"></div>
+								<div class="text">
+									<h3>Jennifer Mellier</h3>
+									<p>Senior Marketing Manager</p>
+									<p>Phone +2347000055500</p>
+									<p>E-mail sparkleglasses@gmail.com</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="img"><img src="Assets/img/image2.png" height="100" width="100"></div>
+								<div class="text">
+									<h3>Catherine Jack</h3>
+									<p>Senior Marketing Manager</p>
+									<p>Phone +2347000055500</p>
+									<p>E-mail sparkleglasses@gmail.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Contact Form Section Ends Here -->
+
+
+			<!-- Newsletter Section Starts Here -->
+			<section class="newsletter-section">
+				<div class="newsletter">
+					<div class="container">
+						<div class="content d-flex">
+							<div class="content-text">
+								<h4>Sign Up for Newsletters</h4>
+								<p>Get Email updates about our latest shop and <span>special offers.</span></p>
+							</div>
+							<form id="form">
+								<div class="email-input">
+									<input type="email" id="email" placeholder="Your Email Address">
+									<button>Sign Up</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Newsletter Section Ends Here -->
+		</main>
+
+		<footer id="footer">
+			<section class="footer-section">
+				<div class="container">
+					<div class="content d-flex">
+						<div class="contact">
+							<h4>sparkle.</h4>
+							<p class="title">Contact</p>
+							<p>Adress: <span>502 Wallington Road Street 32. San Francisco</span></p>
+							<p>Phone: <span>+222 222 2222, (+91)01 2343 0789</span></p>
+							<p>Hours: <span>10:00 - 18:00 Mon - Sat</span></p>
+						</div>
+						<div class="about">
+							<p class="title">About</p>
+							<a href="#">About Us</a>
+							<a href="#">Delivery Information</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Terms & Condition</a>
+							<a href="#">Contact Us</a>
+						</div>
+						<div class="my-account">
+							<p class="title">My Account</p>
+							<a href="#">Sign In</a>
+							<a href="#">View Cart</a>
+							<a href="#">My Wishlist</a>
+							<a href="#">Track My Order</a>
+							<a href="#">Help</a>
+						</div>
+						<div class="payment">
+							<p class="title">Payment Method</p>
+							<a>Secure Payment Gateways</a>
+							<img src="Assets/img/payment.png">
+						</div>
+					</div>					
+				</div>
+			</section>
+		</footer>
+		</main>
+
+</body>
+</html>

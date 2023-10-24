@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.css">
+	<title>Sparkle Shop</title>
+	<style>
+		/*hero*/
+		.hero .container #content{
+		transition: all 1000ms ease-in-out;
+
+		}
+		.hero .container .hero-img{
+
+		}
+		/*Category Section*/
+		/*.catg-img-set{
+			width: 100%;
+			height: 30rem;
+			border-radius: inherit;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+			transition: transform 1s;
+		}
+		#category .catg .catg-img-set:hover{
+			transform: scale(1.05);
+		}
+		#category .catg .img1{
+			background-image: url('Assets/img/menglass.jpg');		
+		}
+		#category .catg .img2{
+			background-image: url('Assets/img/girl-glass4.jpg');		
+		}
+		#category .catg .img3{
+			background-image: url('Assets/img/glasses18.jpg');		
+		}*/
+
+		/*New Arrival section */
+		.bg-set{
+			/*width: 100%;
+*/			height: 26rem;
+			border-radius: inherit;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			transition: all 500ms linear;
+		}
+
+		.category-section .container .img1{
+			background-image: url('Assets/img2/glass1.jpeg');		
+		}
+
+		.category-section .container .img2{
+			background-image: url('Assets/img2/glass21.jpeg');
+		}
+		.category-section .container .img3{
+			background-image: url('Assets/img/glasses15.jpg');		
+		}
+		.category-section .container .img4{
+			background-image: url('Assets/img2/glass19.jpeg');		
+		}
+		
+
+
+		/*Featured Product Section*/
+		.feature-product .container .img1{
+			background-image: url('Assets/img2/glass21.jpeg');		
+		}
+		.feature-product .container .img2{
+			background-image: url('Assets/img2/glass44.jpeg');
+		}
+		.feature-product .container .img3{
+			background-image: url('Assets/img/glasses15.jpg');		
+		}
+		.feature-product .container .img4{
+			background-image: url('Assets/img/glasse7.jpg');		
+		}
+		.feature-product .container .img5{
+			background-image: url('Assets/img2/glass38.jpeg');		
+		}
+		.feature-product .container .img6{
+			background-image: url('Assets/img/glasses14.jpg');		
+		}
+		.feature-product .container .img7{
+			background-image: url('Assets/img2/glass16.jpeg');		
+		}
+		.feature-product .container .img8{
+			background-image: url('Assets/img2/glass20.jpeg');		
+		}
+		.feature-product .container .img9{
+			background-image: url('Assets/img2/glass11.jpeg');		
+		}
+		.feature-product .container .img10{
+			background-image: url('Assets/img2/glass46.jpeg');		
+		}
+		.feature-product .container .img11{
+			background-image: url('Assets/img2/glass17.jpeg');		
+		}
+		.feature-product .container .img12{
+			background-image: url('Assets/img2/glass23.jpeg');		
+		}
+
+
+
+
+
+
+
+
+
+
+		/*||PROMOTION SECTION*/
+		.promo2 .container{
+			width: 100%;
+			height: 65vh;
+			/*background-image: url('Assets/img/promo3.JPG');	
+			border-radius: 1rem;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;*/
+
+
+		}
+
+		/*||TESTIMONIAL SECTION*/
+		.testimonial-section .promo{
+			/*height: 70vh;
+*/			background-image: url('Assets/img/promo2.JPG');	
+			border-radius: 1rem;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+	
+
+		}
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+		<!-- Header Section Starts Here -->
+		<header>
+			<div class="top-nav">
+				<div class="container">
+					<div class="top-content d-flex">
+						<p>Email us: sparkleglassess@gmail.com</p>
+						<p>
+						 +2347000055500
+						 <select name="currency">
+							<option>NGN</option>
+							<option>USD</option>
+							<option>EUR</option>
+							<option>GBP</option>
+							<option>GHS</option>
+						</select>
+						</p>
+					</div>
+					<div class="content d-flex">
+						<div class="logo">
+							<h1>SPARKLE.</h1>
+						</div>
+						<div class="search-box">
+							<input type="text" id="search-input" placeholder="search for products">
+							<div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+						</div>
+						<div class="icons">
+							<!-- <i class="fa-solid fa-user"></i> -->
+							<div class="fa-icon">
+								<i class="fa-regular fa-user"></i>
+								<span><a href="login.html">Login</a><br><a href="register.html">Register</a></span>
+							</div>
+							
+							<div class="fa-icon">								
+ 								<i class="fa-regular fa-heart"></i>
+                                <span>
+                                	<a href="#">Favourite</a> <br> 
+                                	<a href="#">Wishlist</a>
+                                </span>                                
+							</div>
+							<div class="fa-icon">
+								<i class="fa-solid fa-cart-plus"></i>
+ 								<span>
+ 									<a href="#">Add</a> <br> 
+ 									<a href="">To cart</a>
+ 								</span>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav id="navbar">
+				<div class="nav-bar">
+					<div class="responsive-icon">
+						<label id="toggler" class="fas fa-bars" onclick="myfunction()"></label>
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+					
+					<ul id="nav-list">
+						<select name="category">
+							<option>CATEGORY</option>
+							<option>SUNGLASSES</option>
+							<option>PHOTOCHROMIC GLASSESS</option>
+							<option>PRESCRIPTION GLASSES</option>
+							<option>FASHION GLASSES</option>
+						</select>
+						<li><a class="active" href="#">HOME</a></li>
+						<li><a href="#">SHOP</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>					
+				</div>
+			</nav>
+
+			<div class="hero-section">
+				<div class="container">
+					<div class="content d-flex">
+						<div class="left-content">
+							<div class="text">
+								<p>New Inspiration 2023</p>
+								<h1 style="text-shadow: -1px -1px 0px #D04D26;">New Collection</h1>
+								<p>Trending Glasses Collection for both men and women</p>
+								<button><a href="#">Shop Now</a></button>
+							</div>
+							<!-- <img src="Assets/img/glasses15-removebg-preview.png"> -->
+							<div class="img">
+								<img class="img1" src="Assets/img/IMG_6957.png">
+							</div>
+						</div>
+						<div class="right-content d-flex">
+							<div class="box box1">
+								<h3>Popular Now</h3>
+								<p>New Veithdia Classic Glasses @ affordable Price</p>
+								<img src="Assets/img/image.png" height="263" width="260" class="img1">
+ 							</div>
+							<div class="box box2">
+								<h3>Popular Now</h3>
+								<p>Fashion Glasses for kids</p>
+								<img src="Assets/img/IMG_6960.png" height="250" width="350" class="img2">
+								<!-- <img src="Assets/img/image2.png" height="250" width="250" class="img2">
+ -->						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="hero">
+				<div class="glide" id="glide1">
+					<div class="glide__track" data-glide-el="track">
+						<ul class="glide__slides">
+				      		<li class="glide__slide">
+				      			<div class="container d-flex">
+						  			<div class="content" id="content">
+										<p>New Inspiration 2023</p>
+										<h1 id="collection">NEW COLLECTION</h1>
+										<p>Trending glasses collection for both men and women</p>
+										<button class="btn"><a href="#">Shop Now</a></button>
+		 				  			</div>
+						  			<div class="img hero-img">
+										<img src="Assets/img/banner1.png">
+						  			</div>
+								</div>
+				     		 </li>
+				      		 <li class="glide__slide">
+				      			<div class="container d-flex">
+						 	   	    <div class="content">
+										<p>New Inspiration 2023</p>
+										<h1 id="collection">NEW COLLECTION</h1>
+										<p>Trending glasses collection for both men and women</p>
+										<button class="btn"><a href="#">Shop Now</a></button>
+						  			</div>
+						  			<div class="img">
+										<img src="Assets/img/banner9.png" width="500" height="500">
+						  			</div>
+								</div>
+				      		</li>
+				    	</ul>
+				  	</div>
+				</div>
+			</div> -->
+		</header>
+		<!-- Header Section Ends Here -->
+
+		<main>
+			<!-- Services Section Starts Here -->
+			<section class="services-section">
+				<div class="services">
+					<div class="container">
+						<div class="content d-flex">
+							<div class="delivery box d-flex">
+								<div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+								<div class="text">
+									<h3>Home Delivery</h3>
+									<p>Home delivery to all part of Nigeria</p>
+								</div>
+							</div>
+							<div class="offers box d-flex">
+								<div class="icon"><i class="fa-solid fa-gift"></i></div>
+								<div class="text">
+									<h3>Daily Suprise Offers</h3>
+									<p>Get up to 20% of discount</p>
+								</div>								
+							</div>
+							<div class="support box d-flex">
+								<div class="icon"><i class="fa-solid fa-headphones"></i></div>
+								<div class="text">
+									<h3>Support 24/7</h3>
+									<p>Home delivery to all part of Nigeria</p>
+								</div>
+							</div>
+							<!-- <div class="affordable">
+								<img src="">
+								<h3>Affordable Prices</h3>
+								<p>Get products at affordance prices</p>
+							</div>
+							 -->	
+							<div class="payment box d-flex">
+                                <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+                                <div class="text">
+                                	<h3>Secure Payments</h3>
+									<p>100% secure means of payment</p>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Delivery Section Ends Here -->
+
+
+			<!-- Category Section Starts Here -->
+		<!-- 	<section id="category-section">
+				<div id="category">
+					<h1>SHOP <span>BY</span> CATEGORY</h1>
+					<div class="container d-flex">
+						<div class="catg">
+							<div class="img1 catg-img-set">								
+							</div>
+							<p>Photochromic glasess</p>
+						</div>
+						<div class="catg">
+							<div class="img2 catg-img-set">
+								<p>Prescription glasses</p>
+							</div>
+						</div>
+						<div class="catg">
+							<div class="img3 catg-img-set">
+								<a href="#"></a>
+								<p>Ladies Sunglasses</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		 -->	
+
+		 <section id="category-section">
+		 	<div id="category">
+		 		<div class="container">
+		 			<div class="content d-grid">
+		 				<div class="box d-flex">
+		 					<div class="text">
+		 						<h3>Photochromic Glasses</h3>
+		 						<p>Lorem ipsum dolor sit amet</p>
+		 					</div>
+		 					<div class="img"><img src="Assets/img2/glass44.jpeg"></div>
+		 				</div>
+		 				<div class="box d-flex">
+		 					<div class="text">
+		 						<h3>Sun Glasses</h3>
+		 						<p>Lorem ipsum dolor sit amet</p>
+		 					</div>
+		 					<div class="img"><img src="Assets/img/image.png"></div>
+		 				</div>
+		 				<div class="box d-flex">
+		 					<div class="text">
+		 						<h3>Prescription Glasses</h3>
+		 						<p>Lorem ipsum dolor sit amet</p>
+		 					</div>
+		 					<div class="img"><img src="Assets/img/glasses12.png"></div>
+		 				</div>
+		 				<div class="box d-flex">
+		 					<div class="text">
+		 						<h3>Anti Blue-ray Glasses</h3>
+		 						<p>Lorem ipsum dolor sit amet</p>
+		 					</div>
+		 					<div class="img"><img src="Assets/img/menglass2.png"></div>
+		 				</div>
+		 				<div class="box d-flex">
+		 					<div class="text">
+		 						<h3>kid Glasses</h3>
+		 						<p>Lorem ipsum dolor sit amet</p>
+		 					</div>
+		 					<div class="img"><img src="Assets/img/glasse7.png"></div>
+		 				</div>
+		 				<div class="box d-flex">
+		 					<div class="text">
+		 						<h3>Fashion Glasses</h3>
+		 						<p>Lorem ipsum dolor sit amet</p>
+		 					</div>
+		 					<div class="img"><img src="Assets/img2/glass2.jpeg"></div>
+		 				</div>
+		 				<div class="box d-flex">
+		 					<div class="text">
+		 						<h3>Model Glasses</h3>
+		 						<p>Lorem ipsum dolor sit amet</p>
+		 					</div>
+		 					<div class="img"><img src="Assets/img2/glass13.jpeg"></div>
+		 				</div>
+		 				<div class="box d-flex">
+		 					<div class="text">
+		 						<h3>Classic Glasses</h3>
+		 						<p>Lorem ipsum dolor sit amet</p>
+		 					</div>
+		 					<div class="img"><img src="Assets/img2/glass31.jpeg"></div>
+		 				</div>
+
+		 			</div>
+		 		</div>
+		 	</div>
+		 </section>		
+		 <!-- Category Section Ends Here -->
+
+
+			<!-- New Arrival Section Starts Here -->
+			<section class="category-section category">
+				<h1>New <span>Arrival</span></h1>
+				<div class="container ">
+					<div class="product catg cart1">
+						<div class="img1 bg-set overlay">
+						</div>
+						<div class="content">
+							<a href="#" class="title">Photochromic glasses for men</a>
+							<div class="icon">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<h3>N10,000 <span>14,000</span></h3>
+							<div class="iconss">
+								<ul>
+									<li><a href="#" class="fa-solid fa-heart"></a></li>
+									<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>     
+									<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="product cart2">
+						<div class="img2 bg-set overlay">
+						</div>
+						<div class="content">
+							<a href="#" class="title">Photochromic glasses for men</a>
+							<div class="icon">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star" style="color: #e3ac22"></i>
+								<i class="fa-regular fa-star" style="color: #e3ac22"></i>
+							</div>
+							<h3>N10,000</h3>
+							<div class="iconss">
+								<ul>
+									<li><a href="#" class="fa-solid fa-heart"></a></li>
+									<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+									<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="product cart3">
+						<div class="img3 bg-set overlay">
+						</div>
+						<div class="content">
+							<a href="#" class="title">Photochromic glasses for men</a>
+							<div class="icon">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star" style="color: #e3ac22"></i>
+							</div>
+							<h3>N10,000</h3>
+							<div class="iconss">
+								<ul>
+									<li><a href="#" class="fa-solid fa-heart"></a></li>
+									<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+									<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="product cart4">
+						<div class="img4 bg-set overlay">
+						</div>
+						<div class="content">
+							<a href="#" class="title">Photochromic glasses for men</a>
+							<div class="icon">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star" style="color: #e3ac22"></i>
+							</div>
+							<h3>N10,000</h3>
+							<div class="iconss">
+								<ul>
+									<li><a href="#" class="fa-solid fa-heart"></a></li>
+									<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+									<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Category Section Ends Here -->
+
+
+			<!-- Promo Section1 Starts Here -->
+			<section class="promo-section promo2">
+				<div class="promotion">
+					<div class="container">
+						<img src="Assets/img/promo3.JPG" width="100%" height="388px">
+						<!-- <div class="content">
+							<div class="box d-flex">
+								<div class="left-img">
+									<h1>20% OFF</h1>
+									<img src="Assets/img/banner.png">
+								</div>
+								<div class="right-content">
+									<div class="text-wrapper">
+										<img src="Assets/img/glasses5.png">
+										<h1>NEW ARRIVAL<span>20% OFF</span></h1>
+										<p>Limited Time Offer</p>
+										<button><a href="#">Order Now</a></button>
+									</div>
+								</div>
+							</div>
+						</div> -->
+
+					</div>
+				</div>
+			</section>
+
+
+
+
+			<!-- <section class="promo-section promo1">
+				<div class="promotion">
+					<div class="container d-flex">
+						<div class="left-promo">
+							<div class="content">
+								<p>crazy deals</p>
+								<h4>buy 1 get 1 free</h4>
+								<p>The best classic glasses is on sale <br><span>at sparkle.</span></p>
+								<button class="promo-btn"><a href="#">Learn More</a></button>
+							</div>
+							<div class="promo-img">
+								<img src="Assets/img/glasses12.png">
+							</div>
+						</div>
+						<div class="right-promo d-flex">
+							<div class="content">
+								<p>Best Spring/Summer Collection</p>
+								<h4>Upcoming this season</h4>
+								<p>spring/summer glasses collection of 2023</p>
+								<button><a href="#">Collection</a></button>
+							</div>
+							<div class="promo-img">
+								<img src="Assets/img/banner7.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<!-- Promo Section1 Ends Here -->
+
+
+
+			<!-- Side Bar Section Starts Here -->
+			<section class="side-bar-section">
+				<div class="side-bar">
+					<div class="container">
+					</div>
+				</div>
+			</section>
+			<!-- Side Bar Section Endss Here -->
+
+
+			<!-- Featured Products Starts Here -->
+			<section class="featured-product-section">
+				<div class="feature-product">
+					<h1>Featured <span>Products</span></h1>
+					<div class="container">
+						<div class="product">
+							<div class="img1 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img2 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img3 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img4 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img5 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img6 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img7 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img8 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img9 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img10 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img11 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img12 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="btn-div">
+						<button><a href="#">See More</a></button>
+					</div>
+				</div>
+			</section>
+			<!-- Featured Products Ends Here -->
+
+
+			<!-- Promo Section2 Starts Here -->
+			<!-- <section class="promo-section promo2">
+				<div class="promotion">
+					<div class="container">
+						<div class="content">
+							<div class="box d-flex">
+								<div class="left-img">
+									<h1>20% OFF</h1>
+									<img src="Assets/img/banner.png">
+								</div>
+								<div class="right-content">
+									<div class="text-wrapper">
+										<img src="Assets/img/glasses10.png">
+										<h1>NEW ARRIVAL<span>20% OFF</span></h1>
+										<p>Limited Time Offer</p>
+										<button><a href="#">Order Now</a></button
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section> -->
+			<!-- Promo Section2 Ends Here -->
+
+            <!-- Testimonial Section Starts Here -->
+            <section class="testimonial-section">
+            	<div class="testimonial">
+            		<div class="container d-flex">
+            			<div>
+            				<p class="title">Testimonial</p>
+            				<div class="founder testimonial-responsive">
+            				<img src="Assets/img/glasses6.jpg" height="100" width="100">
+            				<h3>ALAN DOE</h3>
+            				<p>CEO & Founder Invision</p>
+            				<i class="fa-solid fa-quote-left"></i>
+            				<p class="description">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.</p>
+            			</div>
+
+            			</div>
+              			<div class="promo promo-div testimonial-responsive">
+            				<div class="box">
+            					<p class="discount">25% discount</p>
+            					<h3>Summer Collection</h3>
+            					<p>Starting @ N10,000</p>
+            					<button><a href="#">Shop Now</a></button>
+            				</div>
+            			</div>
+            			<div>
+            				<p class="title">Our Services</p>
+            				<div class="services testimonial-responsive">
+            					<div class="delivery service-item d-flex">
+									<div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+									<div class="text">
+										<h3>Home Delivery</h3>
+										<p>Home delivery to all part of Nigeria</p>
+									</div>
+								</div>
+								<div class="offers service-item d-flex">
+									<div class="icon"><i class="fa-solid fa-gift"></i></div>
+									<div class="text">
+										<h3>Daily Suprise Offers</h3>
+										<p>Get up to 20% of discount</p>
+									</div>								
+								</div>
+								<div class="support service-item d-flex">
+									<div class="icon"><i class="fa-solid fa-headphones"></i></div>
+									<div class="text">
+										<h3>Support 24/7</h3>
+										<p>Home delivery to all part of Nigeria</p>
+									</div>
+								</div>
+								<div class="payment service-item d-flex">
+	                                <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+	                                <div class="text">
+	                                	<h3>Secure Payments</h3>
+										<p>100% secure means of payment</p>
+	                                </div>
+								</div>
+
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </section>
+            <!-- Testimonial Section Ends Here -->
+
+			<!-- Newsletter Section Starts Here -->
+			<section class="newsletter-section">
+				<div class="newsletter">
+					<div class="container">
+						<div class="content d-flex">
+							<div class="content-text">
+								<h4>Sign Up for Newsletters</h4>
+								<p>Get Email updates about our latest shop and <span>special offers.</span></p>
+							</div>
+							<form id="form">
+								<div class="email-input">
+									<input type="email" id="email" placeholder="Your Email Address">
+									<button>Sign Up</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Newsletter Section Ends Here -->
+		</main>
+
+		<footer id="footer">
+			<section class="footer-section">
+				<div class="container">
+					<div class="content d-flex">
+						<div class="contact">
+							<h4>sparkle.</h4>
+							<p class="title">Contact</p>
+							<p>Adress: <span>502 Wallington Road Street 32. San Francisco</span></p>
+							<p>Phone: <span>+222 222 2222, (+91)01 2343 0789</span></p>
+							<p>Hours: <span>10:00 - 18:00 Mon - Sat</span></p>
+						</div>
+						<div class="about">
+							<p class="title">About</p>
+							<a href="#">About Us</a>
+							<a href="#">Delivery Information</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Terms & Condition</a>
+							<a href="#">Contact Us</a>
+						</div>
+						<div class="my-account">
+							<p class="title">My Account</p>
+							<a href="#">Sign In</a>
+							<a href="#">View Cart</a>
+							<a href="#">My Wishlist</a>
+							<a href="#">Track My Order</a>
+							<a href="#">Help</a>
+						</div>
+						<div class="payment">
+							<p class="title">Payment Method</p>
+							<a>Secure Payment Gateways</a>
+							<img src="Assets/img/payment.png">
+						</div>
+					</div>					
+				</div>
+			</section>
+		</footer>
+		
+
+
+
+	<!-- Glide Js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.js"></script>
+	<!-- Slide Js -->
+	<script src="Assets/js/slider.js"></script>
+	<!-- index Js -->
+	<script src="Assets/js/main.js"></script>
+	</body>
+</html>

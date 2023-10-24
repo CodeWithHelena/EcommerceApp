@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sparkle</title>
+	<link rel="stylesheet" href="Assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+
+		.bg-set{
+			width: 100%;
+			height: 25rem;
+			border-radius: inherit;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			transition: all 500ms linear;
+		}
+
+		.feature-product .container .img1{
+			background-image: url('Assets/img/glasses11.jpg');		
+		}
+		.feature-product .container .img2{
+			background-image: url('Assets/img/glasses14.jpg');
+		}
+		.feature-product .container .img3{
+			background-image: url('Assets/img/glasses15.jpg');		
+		}
+		.feature-product .container .img4{
+			background-image: url('Assets/img/glasse7.jpg');		
+		}
+
+		/*||PRODUCT PAGE ~ PRODUCT SECTION*/
+		.products-item-section .container{
+			max-width: 80rem;
+			/*height: 90vh;*/
+			margin: 5rem auto;
+		}
+		.products-item-section .img-div .main-product-img{
+			height: 40rem;
+			width: 52%;
+			margin-bottom: 1rem;
+		}
+		.products-item-section .main-product-img img{
+			height: inherit;
+			width: 41rem;
+			cursor: pointer;
+		}
+		.products-item-section .img-div .mini-product-img{
+			height: 10rem;
+			width: 100%;
+		}
+		.products-item-section .mini-product-img img{
+			height: 10rem;
+			width: 10rem;
+			cursor: pointer;
+		}
+		.products-item-section .product-description{
+			width: 46%;
+		}
+		.products-item-section .product-description h1{
+			color: var(--darkblue);
+			font-size: 2rem;
+			font-weight: 700;
+			margin: 1rem 0;
+		}
+		.products-item-section .product-description .price{
+			font-weight: 600;
+		}
+		.products-item-section .product-description .product-color{
+			height: 3rem;
+			width: 10rem;
+			border: 1px solid var(--orange);
+			margin: 2rem 0;
+		}
+		.products-item-section .product-description .item-number{
+			height: 3rem;
+			width: 4rem;
+			margin: 1rem 2rem 1rem 0;
+		}
+		.products-item-section .product-description button{
+			height: 4rem;
+			width: 15rem;
+			border: none;
+			background: var(--orange);
+			color: var(--white);
+			font-size: 1.5rem;
+			font-weight: 600;
+			border-radius: 2rem;
+			margin: 1rem 0;
+			cursor: pointer;
+
+		}
+		.products-item-section .product-description button:hover{
+			opacity: 0.5;
+			transition: 1s;
+		}
+
+
+
+
+		@media screen and (max-width: 991px){
+			body{
+				background: red;
+			}
+
+			/*|Product-item-Section*/
+			.products-item-section .container{
+				max-width: 85rem;
+				margin: 5rem 0;
+
+			}
+
+
+
+			.newsletter-section .newsletter .container{
+				height: 30vh;
+				width: 100%;
+			}
+			.newsletter .email-input{
+				margin-top: 2rem;
+			}			
+		}
+		@media screen and (max-width: 768px){
+			body{
+				background: green;
+			}
+			.newsletter-section .newsletter .container{
+				height: 33vh;
+			}
+			.newsletter .email-input{
+				margin-top: 2rem;
+
+			}
+			#footer{
+				padding: 2rem 2rem 1rem;
+			}
+
+			.footer-section .content img{
+				width: 150px;
+			}
+			.footer-section .content .payment a{
+				width: 15rem;
+			}
+
+		}
+
+		@media screen and (max-width: 640px){
+			body{
+				background: grey;
+			}
+			.footer-section .content{
+				flex-direction: column;
+			}
+			.footer-section .content .about, .my-account, .payment{
+				margin-bottom: 2rem;
+			}
+			.footer-section .content img{
+				width: 250px;
+			}
+
+		}
+
+		@media screen and (max-width: 475px){
+			body{
+				background: black;
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<section class="products-item-section">
+			<div class="container">
+				<div class="content d-flex">
+					<div class="img-div">
+						<div class="main-product-img">
+							<img src="Assets/img2/glass42.jpeg" id="main-img">
+						</div>
+						<div class="mini-product-img">
+							<img src="Assets/img2/glass42.jpeg" id="small-img" onclick="changeimg()">
+							<img src="Assets/img2/glass43.jpeg" id="small-img" onclick="changeimg()">
+							<img src="Assets/img2/glass44.jpeg" id="small-img" onclick="changeimg()">
+							<img src="Assets/img2/glass45.jpeg" id="small-img" onclick="changeimg()">
+						</div>
+					</div>
+					<div class="product-description">
+						<p>Home/Glasses</p>
+						<h1>VEITHDIA Unisex Retro Aluminum+TR90 Sunglasses Polarized Lens Vintage Eyewear Sun Glasses</h1>
+						<p class="price">N10,000</p>
+						<select class="product-color">
+							<option>Select color</option>
+							<option>black</option>
+							<option>white</option>
+							<option>grey</option>
+						</select>
+						<div class="cart">
+							<select class="item-number">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+							<button>Add To Cart</button>
+						</div>
+						<h3>Product Details</h3>
+						<p>Give your eyes a style upgrade with the Viethdia Unisex Sunglass. Team with a pair of shorts for the summer season</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Featured Products Starts Here -->
+			<section class="featured-product-section">
+				<div class="feature-product">
+					<h1>Featured <span>Products</span></h1>
+					<div class="container d-flex">
+						<div class="product">
+							<div class="img1 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img2 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img3 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product">
+							<div class="img4 bg-set overlay">
+							</div>
+							<div class="content">
+								<a href="#" class="title">Photochromic glasses for men</a>
+								<div class="icon">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<h3>N10,000 <span>14,000</span></h3>
+								<div class="iconss">
+									<ul>
+										<li><a href="#" class="fa-solid fa-heart"></a></li>
+										<li><a href="#" class="fa-solid fa-cart-shopping cart"></a></li>
+										<li><a href="#" class="fa-solid fa-magnifying-glass"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="btn-div">
+						<button><a href="#">See More</a></button>
+					</div>
+				</div>
+			</section>
+			<!-- Featured Products Ends Here -->
+	</main>
+
+
+	<!-- Newsletter Section Starts Here -->
+			<section class="newsletter-section">
+				<div class="newsletter">
+					<div class="container">
+						<div class="content d-flex">
+							<div class="content-text">
+								<h4>Sign Up for Newsletters</h4>
+								<p>Get Email updates about our latest shop and <span>special offers.</span></p>
+							</div>
+							<form id="form">
+								<div class="email-input">
+									<input type="email" id="email" placeholder="Your Email Address">
+									<button>Sign Up</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Newsletter Section Ends Here -->
+		</main>
+
+		<footer id="footer">
+			<section class="footer-section">
+				<div class="container">
+					<div class="content d-flex">
+						<div class="contact">
+							<h4>sparkle.</h4>
+							<p class="title">Contact</p>
+							<p>Adress: <span>502 Wallington Road Street 32. San Francisco</span></p>
+							<p>Phone: <span>+222 222 2222, (+91)01 2343 0789</span></p>
+							<p>Hours: <span>10:00 - 18:00 Mon - Sat</span></p>
+						</div>
+						<div class="about">
+							<p class="title">About</p>
+							<a href="#">About Us</a>
+							<a href="#">Delivery Information</a>
+							<a href="#">Privacy Policy</a>
+							<a href="#">Terms & Condition</a>
+							<a href="#">Contact Us</a>
+						</div>
+						<div class="my-account">
+							<p class="title">My Account</p>
+							<a href="#">Sign In</a>
+							<a href="#">View Cart</a>
+							<a href="#">My Wishlist</a>
+							<a href="#">Track My Order</a>
+							<a href="#">Help</a>
+						</div>
+						<div class="payment">
+							<p class="title">Payment Method</p>
+							<a>Secure Payment Gateways</a>
+							<img src="Assets/img/payment.png">
+						</div>
+					</div>					
+				</div>
+			</section>
+		</footer>
+
+
+		<script>
+			var mainImg = document.getElementById("main-img");
+			var smallImg = document.getElementById("small-img");
+
+			//smallImg[0].onclick = 
+			// function changeimg(){
+			// 	mainImg.src = smallImg.src;
+			// }
+			function changeimg(){
+				smallImg[0].src = 'glasses19.jpg'
+			}
+
+		</script>
+	
+
+</body>
+</html>

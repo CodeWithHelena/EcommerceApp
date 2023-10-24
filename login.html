@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> my document </title>
+	<link rel="stylesheet" href="Assets/css/style.css">
+	<style type="text/css">
+		.login-form-section .container{
+			height: 70vh;
+			width: 50rem;
+			background: #0b1f40;
+			color: #fcfcfc;
+			margin: 8.5rem auto;
+			padding: 3rem 5rem 2rem;
+			border-radius: 0.8rem;
+			box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+		}
+		.login-form h3{
+			text-align: center;
+			font-size: 2.5rem;
+			font-weight: 600;
+			margin-bottom: 2rem;
+		}
+		.login-form form p{
+			margin: 1rem 0;
+		}
+		.login-form form label{
+			display: block;
+			font-size: 1.7rem;
+			margin: 0.5rem 0;
+		}
+		.login-form form input{
+			height: 5rem;
+			width: 100%;
+			background: whitesmoke;
+			border: #f0f0f0;
+			outline: none;
+			padding-left: 1rem;
+			border-radius: 0.5rem;
+		}
+		
+		.login-form form button{
+			height: 4.5rem;
+			width: 100%;
+			background: #f05b16;
+			color: #fcfcfc;
+			border: none;
+			margin: 1rem 0;
+			border-radius: 2rem;
+			font-size: 2rem; 
+			font-weight: 500;
+			cursor: pointer;
+		}
+		.login-form form button:hover{
+			opacity: 0.8;
+			transition: 1s;
+		}
+		.login-form form .forgot-pword{
+			margin-right: 3rem;
+		}
+		.login-form form .forgot-pword:hover{
+			color: var(--orange);
+			transition: 1s;
+		}
+		.login-form form span a{
+			color: var(--orange);
+			margin-left: 0.5rem;
+		}
+		.login-form form span a:hover{
+			color: orange;
+			transition: 1s;
+		}
+		
+		/*.login-form form .privacy{
+			margin-right: 8rem;
+
+		}
+*/
+
+
+		
+
+		@media screen and (max-width: 991px){
+			body{
+				background: red;
+			}
+			.login-form-section .container{
+				width: 45rem;
+				height: 75vh;
+				margin: 7.5rem auto;
+			}
+			/*.login-form form .forgot-pword{
+				display: block;
+			}
+*/			.login-form form span{
+				font-size: 1.3rem;
+
+			}
+			.login-form form .forgot-pword{
+				font-size: 1.3rem;
+				margin-right: 2rem;
+
+			}
+
+		}
+		@media screen and (max-width: 768px){
+			body{
+				background: blue;
+			}
+			.login-form-section .container{
+				width: 43;
+			}
+			.login-form h3{
+				font-size: 2.3rem;
+			}
+			.login-form form label{
+				font-size: 1.5rem;
+			}
+			.login-form form button{
+				margin: 1.2rem 0;
+			}
+
+		}
+		@media screen and (max-width: 640px){
+			body{
+				background: grey;
+			}
+			.login-form-section .container{
+				width: 38rem;
+				height: 70vh;
+				margin: 9rem auto;
+			}
+			.login-form form input{
+				height: 4rem;
+			}
+			.login-form h3{
+				font-size: 2rem;
+			}
+			.login-form form label{
+				font-size: 1.2rem;
+			}
+			.login-form form button{
+				font-size: 1.7rem;
+			}
+			.login-form form .forgot-pword{
+				display: block;
+				margin-bottom: 1rem;
+			}
+		}
+		@media screen and (max-width: 475px){
+			body{
+				background: black;
+			}
+			.login-form-section .container{
+				width: 36rem;
+			}
+
+			
+		}
+
+	</style>
+</head>
+<body>
+	<main>
+		<section class="login-form-section">
+			<div class="login-form">
+				<div class="container">
+					<h3>Login</h3>
+					<form>
+						<p>
+							<label for="email">Email:</label>
+							<input type="email" name="email" id="email" placeholder="Your email" required>
+						</p>
+						<p>
+							<label for="password">Password:</label>
+							<input type="password" name="p-word" id="p-word" placeholder="Your password" required>
+						</p>
+						
+						<p>
+							<button class="btn">submit</button>
+						</p>
+						<p>
+							<a class="forgot-pword" href="#">Forgot password</a>
+							<span>Don't have an account?<a href="register.html">Sign Up</a></span>
+						</p>
+					</form>
+				</div>
+			</div>
+			
+		</section>
+	</main>
+
+	
+</body>
+</html>
